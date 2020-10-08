@@ -1,0 +1,22 @@
+#registerLogo{
+    width: 200px;
+    margin-left: 90px;
+}
+.registerInput{
+    border:none;
+    border-bottom: 1px solid gray;
+    height: 50px;
+    width:350px;
+    margin: 10px auto 0 25px;
+}
+#registerForm{
+    width: 400px;
+    height: 450px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 20px rgb(192, 192, 192);
+}
+.registerForm{
+    margin: 50px auto 0 480px;
+}

@@ -1,0 +1,13 @@
+#headerLogo{
+    width: 150px;
+}
+.headerItems{
+    padding-top:15px;
+    margin: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn{
+    margin: 10px;
+    font-weight: 600;
+}
