@@ -1,10 +1,11 @@
 import React from 'react';
+import ReviewAndAddEvents from '../components/ReviewAndAddEvents/ReviewAndAddEvents';
 
 const AdminPage = () => {
     return (
-        <div>
-            <h1>This is the Admin Page</h1>
-        </div>
+        <>
+            <ReviewAndAddEvents/>
+        </>
     );
 };
 

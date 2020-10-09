@@ -24,13 +24,13 @@ const Events = () => {
 
     const history = useHistory();
     const cancelEvent = id => {
-        fetch('http://localhost:4000/cancel/' + id, {
+        fetch(`http://localhost:4000/cancel/${id}`, {
             method: 'DELETE'
         })
             .then(response => response.json())
-            .then(data => {
-                history.push('cancel/'+ id)
-                console.log(data);
+            .then(res => {
+                alert('You have cancelled the event successfully!')
+                history.push('/')
             })
     }
 
@@ -40,14 +40,14 @@ const Events = () => {
             <h5 className="text-center">You have registered for {events.length} events</h5>
             <div className="container d-flex row ">
                 {
-                    events.map(myEvents => <> 
+                    events.map(myEvents =><> 
                         <div className="  col-md-5  d-flex events">
                             <img id='event-image' src={volunteer} alt="" />
                             <div className="info">
                                 <h6>{myEvents.about.event}</h6>
                                 <p>{myEvents.about.date}</p>
                             </div>
-                            <button onClick={cancelEvent(myEvents._id)} id="cancel-button" className="btn btn-primary">cancel</button>
+                            <button onClick={() => cancelEvent(myEvents._id)} id="cancel-button" className="btn btn-primary">Cancel</button>
                         </div></>
                     )
                 }

@@ -1,0 +1,27 @@
+.form{
+    width:1000px;
+    height: 300px;
+    background-color:white;
+    border-radius: 20px;
+    margin: 20px 0 0 40px;
+    position: absolute;
+}
+.input-field{
+    width: 450px;
+    height: 50px;
+    border:none;
+    background-color: rgb(230, 227, 227);
+    border-radius:10px;
+    margin: 25px 10px 10px 25px;
+}
+#description{
+    width: 450px;
+    height: 150px;
+    border: none;
+    background-color: rgb(230, 227, 227);
+    border-radius:10px;
+    margin: 25px 10px 10px 25px;
+}
+#file{
+    
+}

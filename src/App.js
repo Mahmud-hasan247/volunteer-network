@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import EventsPage from './pages/EventsPage';
+import AdminPage from './pages/AdminPage';
 
 export const userContext = createContext();
 
@@ -37,8 +38,11 @@ function App() {
             <PrivateRoute path="/register/:name">
               <VolunteerRegisterPage />
             </PrivateRoute>
-            <PrivateRoute path='register'>
+            <PrivateRoute path='/register'>
               <VolunteerRegisterPage />
+            </PrivateRoute>
+            <PrivateRoute path='/adminPanel'>
+              <AdminPage/>
             </PrivateRoute>
             <Route path="/myEvents">
               <EventsPage/>

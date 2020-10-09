@@ -1,0 +1,28 @@
+#admin-logo {
+    width: 200px;
+    margin: 30px 0 0 50px;
+}
+.icons{
+    width: 15px;
+    height: 15px;
+    margin: 5px 10px;
+}
+.toggle{
+    margin: 20px 0 0 40px;
+    cursor: pointer;
+}
+.toggle:hover{
+    color: rgb(70, 70, 255);
+}
+.toggle-between{
+    margin: 10px 0 0 26px;
+    background-color: aliceblue;
+    width: 1080px;
+    height: 580px;
+}
+.headline{
+    margin-top:20px;
+    margin-left: 60px;
+    font-size:30px;
+    font-weight: 500;
+}
