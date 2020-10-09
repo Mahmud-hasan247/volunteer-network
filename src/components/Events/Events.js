@@ -9,7 +9,7 @@ const Events = () => {
     const [events, setEvents] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     useEffect(() => {
-        fetch('http://localhost:4000/myEvents/' + loggedInUser.email, {
+        fetch('https://polar-sierra-60369.herokuapp.com/myEvents/' + loggedInUser.email, {
             method: 'GET',
             headers: {
                 'content-type': 'application/json',
@@ -24,13 +24,15 @@ const Events = () => {
 
     const history = useHistory();
     const cancelEvent = id => {
-        fetch(`http://localhost:4000/cancel/${id}`, {
+        fetch(`https://polar-sierra-60369.herokuapp.com/cancel/${id}`, {
             method: 'DELETE'
         })
             .then(response => response.json())
             .then(res => {
-                alert('You have cancelled the event successfully!')
+                alert("You have cancelled the event successfully!")
                 history.push('/')
+                alert("To show your registered events that's available now click My Events. Thank You...")
+
             })
     }
 
@@ -40,7 +42,7 @@ const Events = () => {
             <h5 className="text-center">You have registered for {events.length} events</h5>
             <div className="container d-flex row ">
                 {
-                    events.map(myEvents =><> 
+                    events.map(myEvents => <>
                         <div className="  col-md-5  d-flex events">
                             <img id='event-image' src={volunteer} alt="" />
                             <div className="info">
@@ -52,8 +54,6 @@ const Events = () => {
                     )
                 }
             </div>
-
-
         </>
     );
 };

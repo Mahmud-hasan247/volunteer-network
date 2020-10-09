@@ -1,5 +1,6 @@
 #eventImage{
     width: 255px;
+    height: 300px;
 }
 .box{
     margin: 30px 0 ;
@@ -15,4 +16,7 @@
     color: white;
     border-radius: 0 0 15px 15px;
     padding-top: 20px;
+    position:absolute;
+    width:255px;
+    margin-top:222px;
 }

@@ -7,7 +7,7 @@ const AddEvent = () => {
     const {handleSubmit, register} = useForm()
     const history = useHistory()
     const onSubmit = data => {
-        fetch('http://localhost:4000/addEvent',{
+        fetch('https://polar-sierra-60369.herokuapp.com/addEvent',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(data)
@@ -27,7 +27,7 @@ const AddEvent = () => {
                     <input type="text" name="name"  ref={register({ required: true })} placeholder='Enter title' className="input-field" />
                     <input type="date" name='date' ref={register({ required: true })} className="input-field"/><br/>
                     <input type="text" name='description'  ref={register({ required: true })} id='description' placeholder='Add a description'/>
-                    <input type="file" id='file'/>
+                    <input type="file"/>
                     <input className='btn btn-primary' type="submit"/>
                 </form>
             </div>

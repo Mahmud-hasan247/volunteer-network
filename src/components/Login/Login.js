@@ -13,22 +13,22 @@ firebase.initializeApp(firebaseConfig);
 const Login = () => {
     const [user, setUser] = useState({
         isSignedIn: false,
-        name:'',
-        email:'',
+        name: '',
+        email: '',
         event: ''
     });
     const [loggedInUser, setLoggedInUser] = useContext(userContext)
 
     const history = useHistory();
     const location = useLocation();
-  
+
     const { from } = location.state || { from: { pathname: "/" } };
 
     var provider = new firebase.auth.GoogleAuthProvider();
     const loginWithGoogle = () => {
         firebase.auth().signInWithPopup(provider)
             .then(result => {
-                const {displayName, email,} = result.user;
+                const { displayName, email, } = result.user;
                 const signedInUser = {
                     isSignedIn: true,
                     name: displayName,
@@ -45,13 +45,13 @@ const Login = () => {
 
     const authToken = () => {
         firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
-        .then(idToken => {
-            sessionStorage.setItem('authToken', idToken)
-            history.replace(from)
-          })
-          .catch(error => {
-              console.log(error);
-          });
+            .then(idToken => {
+                sessionStorage.setItem('authToken', idToken)
+                history.replace(from)
+            })
+            .catch(error => {
+                console.log(error);
+            });
     }
 
     return (
