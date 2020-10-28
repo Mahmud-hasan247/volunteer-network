@@ -8,6 +8,7 @@
 * You have to login with google to register for any event.
 * You can review your registered events and cancel any event form there.
 * Admin can add a new event, that's will shown on the homepage.
+* Admin can view all registered volunteers.
 * Admin can remove anyone from the registered volunteers.
 
 ### `Used technologies`
