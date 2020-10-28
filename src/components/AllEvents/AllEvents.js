@@ -6,7 +6,7 @@ const AllEvents = () => {
     const [events, setEvent] = useState([])
 
     useEffect(() => {
-        fetch('https://polar-sierra-60369.herokuapp.com/getEvents')
+        fetch('http://localhost:4000/getEvents')
             .then(res => res.json())
             .then(data => {
                 setEvent(data)
