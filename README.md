@@ -1,4 +1,4 @@
-# volunteer-network
+# Volunteer Network
 
 ## A full stack social event management web application
 
