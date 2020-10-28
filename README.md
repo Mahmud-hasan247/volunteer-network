@@ -2,7 +2,7 @@
 
 ## A full stack social event management web application
 
-#### `Here is some feature of this project...`
+### `Here is some feature of this project...`
 
 * You can register for any event with date.
 * You have to login with google to register for any event.
@@ -10,7 +10,7 @@
 * Admin can add a new event, that's will shown on the homepage.
 * Admin can remove anyone from the registered volunteers.
 
-#### `Used technologies`
+### `Used technologies`
 
 * JavaScript
 * ES6
@@ -23,7 +23,7 @@
 * firebase
 * heroku
 
-### `View`
+## `View`
 
-#### [Website]() | [ServerRepo]()
-#### [LinkedIn]() | [Portfolio]()
+### [Website]() | [ServerRepo]()
+### [LinkedIn]() | [Portfolio]()
