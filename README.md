@@ -27,4 +27,4 @@
 ## `View`
 
 ### [Website](https://volunteer-network-a05f8.web.app/ "Volunteer Network") | [ServerRepo](https://github.com/Mahmud-hasan247/volunteer-network-server "volunteer network server")
-### [LinkedIn](https://www.linkedin.com/in/mahmudhasan247/ "Mahmud Hasan") | [Portfolio](https://www.linkedin.com/in/mahmudhasan247/ "Mahmud Hasan")
+### [LinkedIn](https://www.linkedin.com/in/mahmudhasan247/ "Mahmud Hasan") | [Portfolio](https://infallible-curie-5e8952.netlify.app/ "Mahmud Hasan")
